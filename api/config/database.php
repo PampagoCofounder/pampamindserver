@@ -1,11 +1,22 @@
 <?php
 
+/*
+    
+    private $host = "localhost" || "localhost";
+    private $db   = "c2761701_pampadb" || "pampagodb";
+    private $user = "c2761701_pampadb" || "root";
+    private $pass = "VE61foweba" || "";
+    
+    
+*/
+
+
 class Database {
     public function connect() {
         $host = "localhost";
-        $db = "pampamind";
-        $user = "root";
-        $pass = "";
+        $db = "c2761701_pampadb";
+        $user = "c2761701_pampadb";
+        $pass = "VE61foweba";
 
         try {
             $pdo = new PDO(

@@ -19,7 +19,12 @@ $email = trim($data->email);
 $password = trim($data->password);
 
 /* 🔥 1. BUSCAR USUARIO */
-$stmt = $db->prepare("SELECT id, nombre, email, password FROM usuarios WHERE email = ?");
+/*
+nueva tabla 
+usuarios_pampamind
+
+*/
+$stmt = $db->prepare("SELECT id, nombre, email, password FROM usuarios_pampamind WHERE email = ?");
 $stmt->execute([$email]);
 
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
