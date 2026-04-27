@@ -40,7 +40,7 @@ if (!$user || !password_verify($password, $user["password"])) {
 $stmt = $db->prepare("
     SELECT r.nombre
     FROM roles r
-    INNER JOIN usuario_roles ur ON ur.rol_id = r.id
+    INNER JOIN usuarios_roles ur ON ur.rol_id = r.id
     WHERE ur.usuario_id = ?
 ");
 $stmt->execute([$user["id"]]);
