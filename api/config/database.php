@@ -17,9 +17,9 @@
 class Database {
     public function connect() {
         $host = "localhost";
-        $db = "c2761701_pampadb";
-        $user = "c2761701_pampadb";
-        $pass = "VE61foweba";
+        $db = "pampamind";
+        $user = "root";
+        $pass = "";
 
         try {
             $pdo = new PDO(

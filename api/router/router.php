@@ -32,8 +32,18 @@ if ($route === "login" && $method === "GET") {
 $routes = [
 
     "POST" => [
-        "login" => "routes/login.php"
+        "login" => "routes/login.php",
+        "upload-clientes"=> "routes/upload_clientes.php",
+
     ],
+    "GET" => [
+        "clientes" => "routes/get_clientes.php",
+        "dolar" => "routes/dolar.php",
+        "riesgo" => "routes/riesgopais.php",
+        "datoscomex" => "routes/datos_comex.php",
+        "empresa" => "routes/get_empresa.php",
+        "empresa_comercio" => "routes/get_empresa_comercio.php"
+    ]
     
 ];
 
