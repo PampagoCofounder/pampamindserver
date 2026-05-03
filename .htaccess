@@ -1,4 +1,6 @@
 RewriteEngine On
+RewriteBase /api/
+
 
 # 🔐 PASAR Authorization header (CLAVE para JWT)
 RewriteCond %{HTTP:Authorization} .
